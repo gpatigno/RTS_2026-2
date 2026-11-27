@@ -30,18 +30,18 @@
 
 **Ubuntu One** proporciona el servicio de identificación utilizado por diferentes servicios de la empresa **Canonical** (desarrolladora de **Ubuntu**), entre ellos **Ubuntu Pro**.
 
-### 1.1. Crear una cuenta
+### 1.1. Creación de una cuenta
 
 1. En un navegador web de su preferencia, acceda a:
 
    https://login.ubuntu.com
 
-2. Seleccionar la opción para crear una cuenta.
-3. Introducir una dirección de correo electrónico y los datos solicitados.
-4. Completar el procedimiento de verificación de la cuenta.
+2. Seleccione la opción para crear una cuenta.
+3. Introduzca una dirección de correo electrónico y los datos solicitados.
+4. Complete el procedimiento de verificación de la cuenta.
 5. Inicie sesión.
 
-Si ya se dispone de una cuenta Ubuntu One, simplemente realizar el inicio de sesión.
+Si ya se dispone de una cuenta **Ubuntu One**, simplemente realizar el inicio de sesión.
 
 
 ## 2. Instalación de rt-tests
@@ -56,7 +56,7 @@ https://ubuntu.com/real-time/docs/how-to/measure-maximum-latency/
 
 ### 2.1. Actualización de repositorios
 
-Abra una terminal en Ubuntu y ejecute:
+En su **Raspberry Pi 4**, abra una terminal en Ubuntu y ejecute:
 
 ```bash
 sudo apt update
@@ -86,7 +86,7 @@ Examine las opciones disponibles, prestando especial atención a:
 
 ### 2.3. Instalación de gnuplot
 
-Para representar gráficamente los histogramas se utilizará GNUPlot.
+Para representar gráficamente los histogramas se utilizará **GNUPlot**.
 
 ```bash
 sudo apt install gnuplot
@@ -102,7 +102,7 @@ gnuplot --version
 
 Antes de configurar **Real-Time Ubuntu**, se establecerá una línea base de referencia.
 
-El propósito de esta actividad es observar el comportamiento temporal del kernel genérico de Linux y reconocer las desviaciones que pueden producirse en la ejecución de tareas periódicas.
+El propósito de esta actividad es observar el comportamiento temporal del kernel genérico de Linux en la **Raspberry Pi**, a fin de reconocer las desviaciones que pueden producirse en la ejecución de tareas periódicas.
 
 ### 3.1. Verificación del kernel actualmente instalado
 
@@ -118,11 +118,11 @@ También se puede ejecutar:
 uname -a
 ```
 
-En este punto se debe identificar que el sistema está utilizando el *kernel genérico* de Ubuntu para Raspberry Pi.
+En este punto se debe identificar que el sistema está utilizando el *kernel genérico* de Ubuntu para **Raspberry Pi**.
 
-### 3.2. Ejecutar cyclictest
+### 3.2. Ejecución de *cyclictest*
 
-Ejecutar el siguiente comando:
+Ejecute el siguiente comando:
 
 ```bash
 sudo cyclictest \
@@ -190,10 +190,10 @@ sudo cyclictest \
     --priority=80 \
     --interval=200 \
     --distance=0 \
-    --duration=10m
+    --duration=2m
 ```
 
-Este último comando ejecuta la prueba durante **diez minutos**.
+Este último comando ejecuta la prueba durante **dos minutos**.
 
 ### 3.5. Generación del histograma de latencias
 
@@ -254,7 +254,7 @@ No debe asumirse que todas las activaciones presentan una latencia similar: los 
 
 ## 4. Habilitación del kernel de tiempo real en Raspberry Pi 4
 
-Se utilizará la versión optimizada de **Real-Time Ubuntu** para Raspberry Pi.
+Se utilizará la versión optimizada de **Real-Time Ubuntu** para **Raspberry Pi**.
 
 La documentación de Canonical se encuentra disponible en:
 
@@ -382,7 +382,7 @@ sudo cyclictest \
 
 Observar los valores de latencia mínima, promedio y máxima.
 
-### 8.1. Generar nuevamente el histograma
+### 6.1. Generar nuevamente el histograma
 
 Utilizar el mismo archivo `histogram-plot.sh` empleado anteriormente:
 
@@ -398,7 +398,7 @@ plot.png
 
 Es importante mantener los mismos parámetros del experimento original para que la comparación tenga sentido.
 
-### 8.2. Comparación conceptual
+### 6.2. Comparación conceptual
 
 Se deben contrastar los resultados de ambos experimentos:
 
@@ -430,7 +430,7 @@ Por tanto, una reducción de latencia observada no constituye por sí sola una d
 
 # PARTE IV. Desarrollo de aplicaciones de tiempo real con C/POSIX
 
-## 9. Introducción al tutorial *First Real-Time Ubuntu Application*
+## 7. Introducción al tutorial *First Real-Time Ubuntu Application*
 
 La documentación de **Canonical** presenta una secuencia de ejemplos para construir aplicaciones de tiempo real:
 
