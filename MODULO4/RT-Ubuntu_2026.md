@@ -266,22 +266,7 @@ https://ubuntu.com/real-time#:~:text=Run%20Real%2Dtime%20Ubuntu%20on%20Raspberry
 
 **Importante:** para Ubuntu 24.04 LTS en Raspberry Pi 4 debe utilizarse la variante `raspi` del kernel de tiempo real. No se debe instalar el kernel Real-Time genérico destinado a otras plataformas.
 
-### 4.1. Actualizar Ubuntu
-
-Ejecutar:
-
-```bash
-sudo apt update
-sudo apt upgrade
-```
-
-Actualizar el cliente Ubuntu Pro:
-
-```bash
-sudo apt install ubuntu-pro-client
-```
-
-### 4.2. Asociar la Raspberry Pi con Ubuntu Pro
+### 4.1. Asociar la Raspberry Pi con Ubuntu Pro
 
 Ejecutar:
 
@@ -305,7 +290,7 @@ Una vez finalizado el procedimiento, se podrá consultar el estado de la suscrip
 sudo pro status
 ```
 
-### 4.3. Habilitación del kernel Real-Time para Raspberry Pi
+### 4.2. Habilitación del kernel Real-Time para Raspberry Pi
 
 Ejecute:
 
