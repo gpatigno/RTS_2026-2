@@ -1,6 +1,10 @@
 # Tutorial en Clase
 ## Implementación y Verificación de un Sistema Operativo de Tiempo Real (Real-Time Ubuntu)
 
+**Observación:** El presente tutorial está basado en el documentación publicada por **Canonical(Ubuntu)** en la siguiente página:
+
+* https://ubuntu.com/real-time
+
 ## Recursos necesarios
 
 ### Hardware
