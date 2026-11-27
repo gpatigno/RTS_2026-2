@@ -4,8 +4,8 @@ CFLAGS = -Wall -Wextra -O2
 LIBS = -lpthread
 
 # Nombre del ejecutable y archivos fuente
-TARGET = scheduler_rt_2026
-SRCS = scheduler_rt_2026.c
+TARGET = 2_scheduler_rt_2026
+SRCS = 2_scheduler_rt_2026.c
 
 # Regla por defecto: compilar el ejecutable
 all: $(TARGET)
